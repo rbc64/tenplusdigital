@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio — Tenplus Digital</title>
+<meta name="description" content="YouTube thumbnails designed by Tenplus Digital, newest first.">
+<meta name="theme-color" content="#3300cc">
+<link rel="icon" href="../assets/favicon.png">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<header class="nav scrolled" id="nav">
+  <a href="../" class="nav-logo" aria-label="Tenplus Digital home"><img src="../assets/mark-white.png" alt=""><span class="brand-text"><b>Tenplus Digital</b><small>Multimedia Consults</small></span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="../#work">Work</a>
+    <a href="../#services">Services</a>
+    <a href="../#lab">Lab</a>
+    <a href="./" aria-current="page">Portfolio</a>
+    <a href="../#contact" class="btn btn-sm">Start a project</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span></button>
+</header>
+
+<main class="pf">
+  <div class="pf-head">
+    <p class="eyebrow"><span class="dot"></span> Portfolio</p>
+    <h1 class="pf-title">Thumbnails</h1>
+    <p class="pf-sub"><span id="count">…</span> designs, newest first. Click any thumbnail to view it full size.</p>
+  </div>
+
+  <div class="filters">
+    <div class="pills" id="years" role="tablist" aria-label="Year"></div>
+    <div class="pills small" id="months" role="tablist" aria-label="Month"></div>
+  </div>
+
+  <div class="pf-grid" id="grid"></div>
+  <div class="pf-more"><button class="btn btn-ghost" id="more" hidden>Show more</button></div>
+  <p class="pf-empty" id="empty" hidden>Nothing here yet.</p>
+</main>
+
+<footer class="foot">
+  <a href="../" class="nav-logo foot-brand"><img src="../assets/mark-white.png" alt=""><span class="brand-text"><b>Tenplus Digital</b><small>Multimedia Consults</small></span></a>
+  <nav><a href="../#work">Work</a><a href="../#services">Services</a><a href="../#lab">Lab</a><a href="../#contact">Contact</a><a href="https://www.instagram.com/tenplussounds/" target="_blank" rel="noopener">Instagram</a></nav>
+  <p>© <span id="year"></span> Tenplus Digital · Multimedia Consults</p>
+</footer>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" hidden>
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <figure>
+    <img id="lbImg" alt="">
+    <figcaption><b id="lbTitle"></b><span id="lbMeta"></span></figcaption>
+  </figure>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next">›</button>
+</div>
+
+<script src="portfolio.js"></script>
+</body>
+</html>

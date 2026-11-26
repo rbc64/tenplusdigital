@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tenplus Digital — Multimedia Consults</title>
+<meta name="description" content="Tenplus Digital is a multimedia studio: YouTube thumbnails, motion graphics, explainer videos, brand design and the tools we build along the way.">
+<meta property="og:title" content="Tenplus Digital — Multimedia Consults">
+<meta property="og:description" content="Thumbnails, motion graphics, explainers and brand design that are impossible to scroll past.">
+<meta property="og:image" content="https://tenplusdigital.com/assets/og.jpg">
+<meta name="theme-color" content="#3300cc">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#top" class="nav-logo" aria-label="Tenplus Digital home"><img src="assets/mark-white.png" alt=""><span class="brand-text"><b>Tenplus Digital</b><small>Multimedia Consults</small></span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#lab">Lab</a>
+    <a href="portfolio/">Portfolio</a>
+    <a href="#contact" class="btn btn-sm">Start a project</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span></button>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="hero-wrap">
+  <div class="pixels" aria-hidden="true"></div>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot"></span> Multimedia studio</p>
+      <h1>Stories built<br>to be <span class="hl">clicked.</span></h1>
+      <p class="lede">Tenplus Digital designs the thumbnails, motion graphics, explainer videos and brand visuals that stop the scroll, and builds the tools that make the work faster.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn">See the work</a>
+        <a href="#contact" class="btn btn-ghost">Start a project</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong data-count="{n}">350+</strong><span>thumbnails designed since July 2026</span></li>
+        <li><strong>4</strong><span>disciplines under one roof</span></li>
+        <li><strong>2</strong><span>free tools live in the Lab</span></li>
+      </ul>
+    </div>
+    <div class="hero-stack" aria-hidden="true">
+      <img src="assets/work/w02.webp" class="card c1" alt="">
+      <img src="assets/work/w03.webp" class="card c2" alt="">
+      <img src="assets/work/w01.webp" class="card c3" alt="">
+      <div class="plus-badge"><img src="assets/mark-white.png" alt=""></div>
+    </div>
+  </section>
+  </div>
+
+  <!-- MARQUEE -->
+  <section class="marquee" aria-label="Recent thumbnails">
+    <div class="track" id="track"></div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="section-head">
+      <p class="eyebrow">What we do</p>
+      <h2>Four disciplines.<br>One studio.</h2>
+    </div>
+    <div class="services">
+      <article class="svc" style="--c: var(--yellow)">
+        <span class="svc-num">01</span>
+        <h3>YouTube thumbnails &amp; packaging</h3>
+        <p>High-contrast, story-first thumbnails with A/B variants for every upload, built to lift click-through without losing the channel's look.</p>
+        <ul><li>Thumbnail sets &amp; variants</li><li>Channel art &amp; banners</li><li>Title + thumbnail pairing</li></ul>
+      </article>
+      <article class="svc" style="--c: var(--sky)">
+        <span class="svc-num">02</span>
+        <h3>Motion graphics &amp; explainers</h3>
+        <p>Animated explainers, paper cut-out stories, show intros and teasers, all scripted, voiced and edited in-house.</p>
+        <ul><li>Explainer videos</li><li>Intros, teasers &amp; titles</li><li>Educational series</li></ul>
+      </article>
+      <article class="svc" style="--c: var(--orange)">
+        <span class="svc-num">03</span>
+        <h3>Brand &amp; campaign design</h3>
+        <p>Campaign artwork, print banners, displays and social creatives, built non-destructively and delivered print- and screen-ready.</p>
+        <ul><li>Campaign key visuals</li><li>Print &amp; outdoor</li><li>Social creatives</li></ul>
+      </article>
+      <article class="svc" style="--c: var(--green)">
+        <span class="svc-num">04</span>
+        <h3>Web tools &amp; apps</h3>
+        <p>Fast, private, browser-based tools and small apps for creators and teams. Several started as tools we built for our own work.</p>
+        <ul><li>Creator tools</li><li>Web apps &amp; plugins</li><li>Bots &amp; automations</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="section-head row">
+      <div>
+        <p class="eyebrow">Selected work</p>
+        <h2>Thumbnails that<br>earn the click.</h2>
+      </div>
+      <a href="portfolio/" class="btn btn-ghost" data-count="View all {n} →">View all 350+ →</a>
+    </div>
+    <div class="work-grid" id="workGrid"></div>
+  </section>
+
+  <!-- LAB -->
+  <section class="section lab" id="lab">
+    <div class="section-head">
+      <p class="eyebrow">The Lab</p>
+      <h2>Tools we built.<br>Free to use.</h2>
+      <p class="sub">Things we made for our own production work, polished up and shared.</p>
+    </div>
+    <div class="tools">
+      <a class="tool live" href="https://unmix.tenplusdigital.com" target="_blank" rel="noopener">
+        <div class="tool-top">
+          <svg viewBox="0 0 32 32" class="tool-ico" aria-hidden="true"><rect x="3" y="6" width="26" height="4" rx="2" fill="#f2b84b"/><rect x="3" y="14" width="18" height="4" rx="2" fill="#5aa9ff"/><rect x="3" y="22" width="22" height="4" rx="2" fill="#3fd3a6"/></svg>
+          <span class="pill live-pill">Live · Beta</span>
+        </div>
+        <h3>Unmix</h3>
+        <p>Split any audio or video into a clean voice layer, drums, bass and background, privately in your browser. Export WAV or MP3.</p>
+        <span class="tool-link">Open Unmix →</span>
+      </a>
+      <a class="tool live" href="https://hush.tenplusdigital.com" target="_blank" rel="noopener">
+        <div class="tool-top">
+          <svg viewBox="0 0 32 32" class="tool-ico" aria-hidden="true"><path d="M4 20c3-6 5-6 8 0s5 6 8 0 5-6 8 0" fill="none" stroke="#3fa9f5" stroke-width="3" stroke-linecap="round"/><path d="M4 12c3-4 5-4 8 0s5 4 8 0 5-4 8 0" fill="none" stroke="#9900ff" stroke-width="3" stroke-linecap="round" opacity=".7"/></svg>
+          <span class="pill live-pill">Live</span>
+        </div>
+        <h3>Hush</h3>
+        <p>An ambient noise mixer. Layer rain, cafés, fans, waves and white noise into your own focus or sleep soundscape.</p>
+        <span class="tool-link">Open Hush →</span>
+      </a>
+      <div class="tool">
+        <div class="tool-top">
+          <svg viewBox="0 0 32 32" class="tool-ico" aria-hidden="true"><rect x="3" y="3" width="12" height="16" rx="2" fill="#ff9933"/><rect x="17" y="3" width="12" height="9" rx="2" fill="#ffff33"/><rect x="17" y="14" width="12" height="15" rx="2" fill="#3fa9f5"/><rect x="3" y="21" width="12" height="8" rx="2" fill="#9900ff"/></svg>
+          <span class="pill">In the lab</span>
+        </div>
+        <h3>Collage Maker</h3>
+        <p>An offline photo collage maker in the spirit of the classic Picasa collage tool: drop in photos, pick a style, export.</p>
+        <span class="tool-link muted">Coming soon</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="pixels" aria-hidden="true"></div>
+    <img src="assets/mark-white.png" alt="" class="contact-mark">
+    <h2>Got a video, a brand<br>or an idea?</h2>
+    <p>Tell us what you're making. We'll reply with ideas, a timeline and a quote.</p>
+    <p class="contact-mail"><a href="mailto:ten@tenplusdigital.com">ten@tenplusdigital.com</a></p>
+    <div class="hero-cta center">
+      <a href="mailto:ten@tenplusdigital.com?subject=Project%20enquiry" class="btn btn-light">Email us</a>
+      <a href="https://www.instagram.com/tenplussounds/" target="_blank" rel="noopener" class="btn btn-ghost-light"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg>@tenplussounds</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <a href="#top" class="nav-logo foot-brand"><img src="assets/mark-white.png" alt=""><span class="brand-text"><b>Tenplus Digital</b><small>Multimedia Consults</small></span></a>
+  <nav>
+    <a href="#work">Work</a><a href="#services">Services</a><a href="#lab">Lab</a><a href="portfolio/">Portfolio</a><a href="#contact">Contact</a><a href="https://www.instagram.com/tenplussounds/" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+  <p>© <span id="year"></span> Tenplus Digital · Multimedia Consults</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
